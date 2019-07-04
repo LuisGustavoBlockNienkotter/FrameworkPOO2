@@ -8,7 +8,9 @@ package Classes;
 
 import Classes.BO.ListaProduto;
 import Classes.BO.ManipJSON;
-import Conexão.Conexao;
+import Classes.BO.ManipJSONMagazineLuiza;
+import Conexão.ConexaoMagazineLuiza;
+import Facade.Controlador;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -21,13 +23,17 @@ import org.jsoup.Jsoup;
  */
 public class test {
     public static void main(String[] args) throws IOException{
-        String url = "https://www.amazon.com.br/b/ref=s9_acss_bw_cg_Celular_3b1_w?ie=UTF8&"
-                + "node=17716142011&pf_rd_m=A3RN7G7QC5MWSZ&pf_rd_s=merchandised-search-5&pf_rd_r="
-                + "1HJXS0SG9GZ6HM5WM7CD&pf_rd_t=101&pf_rd_p=0838205f-62f8-4999-8714-b5d906838dae&pf_rd_i=16243890011";
-        //ManipJSON.gravar(Conexao.getDados(url));
-        //ListaProduto lista = ManipJSON.ler();
-        Document doc = Jsoup.connect(url).get();
+        String url = "https://www.magazineluiza.com.br/celulares-e-smartphones/l/te/brand---samsung/";
+        ManipJSON manip = new ManipJSONMagazineLuiza();
+        Controlador c = new Controlador(manip);
         
-        System.out.println(doc);
+        c.salvarDados(url);
+        c.ler();
+        
+        for (String titulo : c.pegarTodosOsTitulos()) {
+            System.out.println(titulo);
+        }
+        
+                
     }
 }

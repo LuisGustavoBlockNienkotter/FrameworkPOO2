@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Classes/BO/ManipJSONMagazineLuiza.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/test/Testes/TestesControlador.java</file>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Classes/BO/ListaProduto.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Conexão/Conexao.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Classes/test.java</file>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Classes/DTO/Produto.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Dados/CelularesMagazineLuiza.json</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Facade/Controlador.java</file>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Classes/BO/ManipJSON.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/Framework/src/Conexão/ConexaoMagazineLuiza.java</file>
         </group>
     </open-files>
 </project-private>

@@ -35,5 +35,25 @@ public class ListaProduto {
         }
         return listaRetorno;
     }
+    
+    public Produto selectById(String id){
+        for (Iterator<Produto> iterator = lista.iterator(); iterator.hasNext();) {
+            Produto next = iterator.next();
+            if (next.getId().equals(id)) {
+                return next;
+            }
+        }
+        return null;
+    }
+    
+    public Produto selectByTitle(String title){
+        for (Iterator<Produto> iterator = lista.iterator(); iterator.hasNext();) {
+            Produto next = iterator.next();
+            if (next.getTitle().equals(title)) {
+                return next;
+            }
+        }
+        return null;
+    }
      
 }
